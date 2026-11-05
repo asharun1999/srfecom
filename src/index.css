@@ -1,0 +1,38 @@
+:root {
+  --text: #555;
+  --text-h: #111;
+  --bg: #fff;
+  --border: #e5e5e5;
+  --accent: #e11d48;
+  --accent-bg: rgba(225, 29, 72, 0.08);
+  --shadow:
+    rgba(0, 0, 0, 0.08) 0 4px 12px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font: 16px/1.5 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--sans);
+  color: var(--text-h);
+}
